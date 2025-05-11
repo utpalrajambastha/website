@@ -13,8 +13,11 @@
 
   <!-- Header -->
   <header class="header">
-    <a href="#" class="logo">Utpal Ambastha<span class="animate" style="--i:1;"></span></a>
-    <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+    <a href="#" class="logo">
+      Utpal Ambastha<span class="animate" style="--i:1;"></span>
+    </a>
+    <!-- Menu toggle icon -->
+    <i class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></i>
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#about">About Me</a>
@@ -24,19 +27,21 @@
       <a href="#extracurricular">Extracurricular</a>
       <a href="#contact">Contact</a>
       <span class="active-nav"></span>
-      <span class="animate" style="--i:2;"></span>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section class="home show-animate" id="home">
     <div class="home-content">
-      <h1>Hi, I'm <span>Utpal Raj Ambastha</span><span class="animate" style="--i:2;"></span></h1>
+      <h1>
+        Hi, I'm <span>Utpal Raj Ambastha</span><span class="animate" style="--i:2;"></span>
+      </h1>
       <div class="text-animate">
         <div class="test">Undergraduate Researcher</div>
         <span class="animate" style="--i:3;"></span>
       </div>
-      <p>This is in index.html → home section design
+      <p>
+        Welcome to my portfolio! I’m passionate about optical physics, AI, and web development.
         <span class="animate" style="--i:4;"></span>
       </p>
       <div class="btn-box">
@@ -46,32 +51,40 @@
     </div>
 
     <div class="homephoto">
-      <img src="Website_home_photo.jpg" alt="Utpal Raj Ambastha Photo" width="400" height="400" />
-
+      <!-- Exact filename match, placed alongside index.html -->
+      <img
+        src="Website_home_photo.jpg"
+        alt="Utpal Raj Ambastha"
+        width="400"
+        height="400"
+      />
     </div>
 
     <div class="home-sci">
-      <a href="#"><i class='bx bxl-linkedin'></i></a>
-      <a href="#"><i class='bx bxl-instagram'></i></a>
-      <a href="#"><i class='bx bxl-github'></i></a>
-      <span class="animate" style="--i:6;"></span>
+      <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
     </div>
-
-    <div class="home-imgHover"></div>
-    <span class="animate home-img" style="--i:7;"></span>
   </section>
 
   <!-- About Section -->
   <section class="about" id="about">
-    <h1 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h1>
+    <h2 class="heading">
+      About <span>Me</span><span class="animate scroll" style="--i:1;"></span>
+    </h2>
     <div class="about-img">
-      <img src="Website_home_photo.jpg" alt="About Utpal">
+      <img src="Website_home_photo.jpg" alt="Utpal Raj Ambastha" />
       <span class="circle-spin"></span>
       <span class="animate" style="--i:2;"></span>
     </div>
     <div class="about-content">
-      <h3>Undergraduate Researcher!<span class="animate" style="--i:3;"></span></h3>
-      <p>This is line no 71 of index.html<span class="animate" style="--i:4;"></span></p>
+      <h3>
+        Undergraduate Researcher!<span class="animate" style="--i:3;"></span>
+      </h3>
+      <p>
+        I'm currently working on CO₂ laser-based optical trapping and AI-driven data analysis.
+        <span class="animate" style="--i:4;"></span>
+      </p>
       <div class="btn-box btns">
         <a href="#" class="btn">Read More</a>
       </div>
@@ -84,19 +97,19 @@
     <div class="skills-content">
       <div class="skill-box">
         <h3>Programming & Tools</h3>
-        <p>Python, C++, C, MATLAB, MySQL, Git, VS Code, Linux, MS Excel, BigQuery</p>
+        <p>Python, C++, MATLAB, Git, Linux, BigQuery</p>
       </div>
       <div class="skill-box">
         <h3>Machine Learning & Data</h3>
-        <p>Scikit-learn, TensorFlow (basic), data preprocessing, regression models</p>
+        <p>Scikit-learn, TensorFlow, data preprocessing, regression</p>
       </div>
       <div class="skill-box">
         <h3>Web Development</h3>
         <p>HTML, CSS, JavaScript, Flask, GitHub Pages</p>
       </div>
       <div class="skill-box">
-        <h3>Scientific & Optical Design</h3>
-        <p>Optical Design, Fiber Optics, Nanophotonics, Optical Tweezers, Quantum Computing</p>
+        <h3>Optical & Quantum Design</h3>
+        <p>Optical tweezers, nanophotonics, quantum computation</p>
       </div>
     </div>
   </section>
@@ -107,9 +120,12 @@
     <div class="research-content">
       <div class="research-box">
         <h3>Single Beam Gradient Force Optical Trap</h3>
-        <p><strong>Supervisor:</strong> Dr. Venkata Ramanaiah Dantham, Associate Professor, Department of Physics, IIT Patna</p>
-        <p><strong>Duration:</strong> January 2025 – Ongoing</p>
-        <p><strong>Description:</strong> Designed and built a functional microscope to observe and estimate the size of glass microspheres (~12.2–12.3 μm). Currently developing a CO₂ (30W) laser-based optical trapping system to confine nanoparticles. The next phase involves leveraging photonic nanojets for enhanced trapping precision.</p>
+        <p><strong>Supervisor:</strong> Dr. V. R. Dantham, IIT Patna</p>
+        <p><strong>Duration:</strong> Jan 2025 – Ongoing</p>
+        <p>
+          Built a custom microscope to size glass microspheres (~12.2 μm) and am
+          developing a 30 W CO₂ laser trap for nanoparticles using photonic nanojets.
+        </p>
       </div>
     </div>
   </section>
@@ -118,14 +134,25 @@
   <section class="techprojects" id="techprojects">
     <h2 class="heading">Tech <span>Projects</span></h2>
     <div class="project-content">
-      <!-- Repeat structure for each project -->
       <div class="project-box">
-        <h3>Resume & Skills Web Application</h3>
-        <p><strong>Context:</strong> Google Developer Groups (GDG) Solutions Challenge</p>
-        <p><strong>Description:</strong> Built a web app using Python (Flask) that allows users to log in, submit skills, and upload resumes. Integrated a machine learning model to parse and analyze submissions. Features include authentication, dashboard, client-side validation, and a clean frontend interface.</p>
-        <p><strong>Tech Stack:</strong> Python, Flask, HTML, CSS, JavaScript, scikit-learn</p>
+        <h3>Resume & Skills Web App</h3>
+        <p><strong>Context:</strong> GDG Solutions Challenge</p>
+        <p>
+          Flask-based web app with authentication, ML resume parser, client-side
+          validation, and dashboard.
+        </p>
+        <p><strong>Stack:</strong> Python, Flask, HTML, CSS, JavaScript, scikit-learn</p>
       </div>
-      <!-- Other project-box entries follow... -->
+      <div class="project-box">
+        <h3>Credit Card Fraud Detection</h3>
+        <p><strong>Context:</strong> Celesta 2024, IIT Patna</p>
+        <p>
+          ML/ANN system with TensorFlow; handled imbalanced data, evaluated with
+          precision/recall/F1 over 300 epochs.
+        </p>
+        <p><strong>Stack:</strong> Python, Pandas, scikit-learn, TensorFlow</p>
+      </div>
+      <!-- Add more projects as needed -->
     </div>
   </section>
 
@@ -135,36 +162,57 @@
     <div class="extra-content">
       <div class="extra-box">
         <h3>Chess</h3>
-        <p>Captain of the IIT Patna Chess Team. Led the team at the 57th Inter IIT Sports Meet 2024.</p>
+        <p>Captain, IIT Patna Chess Team; led at Inter-IIT Sports Meet 2024.</p>
       </div>
-      <!-- More extra-box entries... -->
+      <div class="extra-box">
+        <h3>Sketching</h3>
+        <p>Self-taught sketch artist exploring creative ideas in free time.</p>
+      </div>
+      <!-- More as needed -->
     </div>
   </section>
 
   <!-- Contact -->
   <section class="contact" id="contact">
-    <h2 class="heading">Contact <span> Me</span></h2>
+    <h2 class="heading">Contact <span>Me</span></h2>
     <form action="#">
       <div class="input-box">
-        <div class="input-field"><input type="text" placeholder="Full Name" required><span class="focus"></span></div>
-        <div class="input-field"><input type="text" placeholder="Email Address" required><span class="focus"></span></div>
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" required />
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email Address" required />
+          <span class="focus"></span>
+        </div>
       </div>
       <div class="input-box">
-        <div class="input-field"><input type="number" placeholder="Mobile Number" required><span class="focus"></span></div>
-        <div class="input-field"><input type="text" placeholder="Email Subject" required><span class="focus"></span></div>
+        <div class="input-field">
+          <input type="tel" placeholder="Mobile Number" required />
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Subject" required />
+          <span class="focus"></span>
+        </div>
       </div>
-      <div class="textarea-field"><textarea cols="30" rows="10" placeholder="Your Message" required></textarea><span class="focus"></span></div>
-      <div class="btn-box btns"><button type="submit" class="btn">Submit</button></div>
+      <div class="textarea-field">
+        <textarea cols="30" rows="6" placeholder="Your Message" required></textarea>
+        <span class="focus"></span>
+      </div>
+      <div class="btn-box btns">
+        <button type="submit" class="btn">Submit</button>
+      </div>
     </form>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-text">
-      <p>Copyright &copy; 2025 by Utpal Raj Ambastha | All Rights Reserved.</p>
+      <p>© 2025 Utpal Raj Ambastha. All rights reserved.</p>
     </div>
     <div class="footer-icontop">
-      <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
     </div>
   </footer>
 
