@@ -108,12 +108,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 70vh;
 }
 
 .homephoto img {
-    height: 70vh;      
-    width: auto;      
+    height: auto;      
+    width: 100%;      
     max-width: 100%;   
     object-fit: contain;
     display: block;
