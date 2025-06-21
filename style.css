@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #1b1f23;           /* main background: near black */
-    --second-bg-color: #282c34;    /* section blocks: dark gray */
-    --main-color: #00c2ff;         /* accent color: cyan/blue */
-    --text-color: #f0f0f0;         /* main text: soft white */
+    --bg-color: #f4f1ee;           /* main background: near black */
+    --second-bg-color: #e9e4df;    /* section blocks: dark gray */
+    --main-color: #5b5f97;         /* accent color: cyan/blue */
+    --text-color: #333333;         /* main text: soft white */
 }
 
 
