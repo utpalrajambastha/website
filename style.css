@@ -282,6 +282,21 @@ section {
     font-size: 1.6rem;
 }
 
+.research-interests ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.research-interests li {
+  margin-bottom: 1rem;
+}
+
+.research-interests h3 {
+  font-size: 1.4rem; /* adjust if needed */
+  font-weight: 600;
+}
+
+
 /* Contact */
 .contact {
     padding: 6rem 9%;
