@@ -38,12 +38,6 @@ const handleScroll = () => {
       section.classList.add('show-animate');
     }
   });
-
-  // Auto-close navbar when scrolling on mobile
-  if (navbar.classList.contains('active')) {
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-  }
 };
 
 // Debounce scroll for performance
@@ -67,17 +61,30 @@ navLinks.forEach(link => {
         top: targetSection.offsetTop - 80, // offset for sticky header
         behavior: 'smooth'
       });
+
+      // Close mobile navbar after click
+      if (navbar.classList.contains('active')) {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+      }
     }
   });
 });
 
 // ================================
-// Optional: Animate sections on page load
+// Animate sections visible on page load
 // ================================
 window.addEventListener('load', () => {
   sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop - 120) {
+    if (window.scrollY >= section.offsetTop - 120 || window.scrollY === 0) {
       section.classList.add('show-animate');
     }
   });
+});
+
+// ================================
+// Optional: Re-trigger animations when resizing
+// ================================
+window.addEventListener('resize', () => {
+  handleScroll();
 });
