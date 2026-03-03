@@ -85,6 +85,4 @@ window.addEventListener('load', () => {
 // ================================
 // Optional: Re-trigger animations when resizing
 // ================================
-window.addEventListener('resize', () => {
-  handleScroll();
-});
+window.addEventListener('resize', handleScroll);
