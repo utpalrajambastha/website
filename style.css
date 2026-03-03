@@ -151,13 +151,13 @@ section {
 }
 
 /* Home Section Social + Collaborate Alignment */
+/* Home Section Social + Collaborate Alignment */
 .home-sci-collab {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    position: absolute;
-    bottom: 4rem;
-    left: 4rem;
+    gap: 2rem; /* space between icons and button */
+    margin-top: 2rem; /* spacing from headline/sub-headline */
+    flex-wrap: wrap;
 }
 
 .home-sci {
@@ -188,6 +188,21 @@ section {
     font-size: 1.6rem;
 }
 
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .home-sci-collab {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-sci-collab {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
 /* Buttons */
 .btn-box {
     display: inline-flex;
