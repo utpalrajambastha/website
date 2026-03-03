@@ -24,7 +24,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 /* Header */
@@ -99,7 +99,7 @@ section {
 /* Cards (Skills, Projects, Research) */
 .skill-box, .project-box, .research-box, .extra-box {
     background: var(--bg-color);
-    padding: 2.5rem;
+    padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 4px 15px var(--card-shadow);
     transition: 0.3s ease;
@@ -112,13 +112,14 @@ section {
 
 .skill-box h3, .project-box h3, .research-box h3, .extra-box h3 {
     font-size: 2.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     color: var(--main-color);
 }
 
 .skill-box p, .project-box p, .research-box p, .extra-box p {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
     color: var(--text-color);
+    line-height: 1.8;
 }
 
 /* About Section */
@@ -133,16 +134,17 @@ section {
 }
 
 #about p {
-    max-width: 850px;
+    max-width: 900px;
     margin: 1rem auto;
-    font-size: 1.7rem;
+    font-size: 1.75rem;
+    line-height: 1.85;
 }
 
 /* Skills / Research / Projects Sections */
 .skills-content, .research-content, .project-content, .extra-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 /* Buttons */
@@ -155,6 +157,7 @@ section {
     border-radius: 0.6rem;
     border: 2px solid var(--main-color);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -164,10 +167,10 @@ section {
 
 /* Contact Form */
 .contact form {
-    max-width: 70rem;
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .input-field, .textarea-field {
@@ -176,7 +179,7 @@ section {
 
 .input-field input, .textarea-field textarea {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.6rem;
     border: 2px solid var(--main-color);
     border-radius: 0.6rem;
     background: transparent;
@@ -185,7 +188,7 @@ section {
 }
 
 .textarea-field textarea {
-    height: 150px;
+    height: 160px;
     resize: none;
 }
 
@@ -216,7 +219,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .skills-content, .research-content, .project-content {
+    .skills-content, .research-content, .project-content, .extra-content {
         grid-template-columns: 1fr;
     }
 }
@@ -224,6 +227,45 @@ footer {
 @media (max-width: 480px) {
     header h1 { font-size: 2.4rem; }
     .heading { font-size: 3.6rem; }
-    .skill-box h3, .project-box h3 { font-size: 2rem; }
-    .skill-box p, .project-box p { font-size: 1.5rem; }
+    .skill-box h3, .project-box h3, .research-box h3, .extra-box h3 { font-size: 2rem; }
+    .skill-box p, .project-box p, .research-box p, .extra-box p { font-size: 1.5rem; }
+}
+
+/* Additional Enhancements for Long Text */
+.research-box p, .project-box p {
+    word-wrap: break-word;
+}
+
+.research-box {
+    min-height: 25rem;
+}
+
+.project-box {
+    min-height: 20rem;
+}
+
+#about .about-content p {
+    text-align: justify;
+}
+
+/* Home Section Adjustments */
+.home-content h1 {
+    font-size: 3rem;
+}
+
+.home-content .headline {
+    font-size: 1.95rem;
+    margin-top: 1.2rem;
+    max-width: 65rem;
+}
+
+.home-content .sub-headline {
+    font-size: 1.65rem;
+    margin-top: 1rem;
+    max-width: 65rem;
+}
+
+/* Smooth card scrolling for long content */
+.skills-content, .research-content, .project-content {
+    scroll-behavior: smooth;
 }
