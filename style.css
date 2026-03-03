@@ -91,6 +91,7 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    padding-top: 14rem; /* increased from 10rem to avoid overlap with fixed header */
 }
 
 .home-content {
@@ -416,4 +417,17 @@ section {
     height: 100%;
     z-index: 0;
     background: var(--bg-color);
+}
+
+
+@media (max-width: 991px) {
+    .home {
+        padding-top: 16rem; /* extra top space for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding-top: 18rem;
+    }
 }
