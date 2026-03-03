@@ -1,44 +1,83 @@
-// Toggle navbar menu icon and navbar visibility
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// ================================
+// Navbar Toggle (Mobile)
+// ================================
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
+menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
-};
+});
 
-// Highlight active nav link on scroll and show section animation
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+// ================================
+// Section Scroll Handling
+// ================================
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
+const header = document.querySelector('header');
 
-window.onscroll = () => {
-  let top = window.scrollY;
+const handleScroll = () => {
+  const scrollY = window.scrollY;
 
+  // Sticky Header
+  header.classList.toggle('sticky', scrollY > 100);
+
+  // Section Activation & Nav Highlight
   sections.forEach(section => {
-    let offset = section.offsetTop - 100;
-    let height = section.offsetHeight;
-    let id = section.getAttribute('id');
+    const offsetTop = section.offsetTop - 120; // offset for sticky header
+    const sectionHeight = section.offsetHeight;
+    const id = section.getAttribute('id');
 
-    if (top >= offset && top < offset + height) {
-      // Remove 'active' from all links
+    if (scrollY >= offsetTop && scrollY < offsetTop + sectionHeight) {
+      // Highlight nav link
       navLinks.forEach(link => link.classList.remove('active'));
-
-      // Add 'active' to the current section's nav link
-      let activeLink = document.querySelector(`header nav a[href="#${id}"]`);
+      const activeLink = document.querySelector(`header nav a[href="#${id}"]`);
       if (activeLink) activeLink.classList.add('active');
 
-      // Add animation trigger
+      // Trigger section animation
       section.classList.add('show-animate');
-    } else {
-      section.classList.remove('show-animate');
     }
   });
 
-  // Sticky header
-  let header = document.querySelector('header');
-  header.classList.toggle('sticky', top > 100);
-
-  // Auto-close navbar on scroll
-  menuIcon.classList.remove('bx-x');
-  navbar.classList.remove('active');
+  // Auto-close navbar when scrolling on mobile
+  if (navbar.classList.contains('active')) {
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+  }
 };
+
+// Debounce scroll for performance
+let scrollTimeout;
+window.addEventListener('scroll', () => {
+  if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
+  scrollTimeout = requestAnimationFrame(handleScroll);
+});
+
+// ================================
+// Smooth Scroll for Nav Links
+// ================================
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 80, // offset for sticky header
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// ================================
+// Optional: Animate sections on page load
+// ================================
+window.addEventListener('load', () => {
+  sections.forEach(section => {
+    if (window.scrollY >= section.offsetTop - 120) {
+      section.classList.add('show-animate');
+    }
+  });
+});
