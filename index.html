@@ -1,167 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Utpal Raj Ambastha | Research Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utpal Raj Ambastha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
+  <div id="particles-js"></div>
 
-<!-- HEADER -->
-<header class="header">
-  <a href="#" class="logo">Utpal Ambastha</a>
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">Utpal Ambastha</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#coreresearch">Core Research</a>
+      <a href="#research-interests">Research Interests</a>
+      <a href="#techprojects">Tech Projects</a>
+      <a href="#extracurricular">Extracurricular</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Home -->
+  <section class="home show-animate" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Utpal Raj Ambastha</span></h1>
 
-<!-- HOME -->
-<section id="home" class="home">
-  <div class="home-content">
-    <h1>Utpal Raj Ambastha</h1>
+      <div class="text-animate">
+        <div class="test">Engineering Physics Undergraduate | Control & Embedded Systems</div>
+      </div>
 
-    <h3>Engineering Physics Undergraduate | IIT Patna</h3>
+      <h2 class="headline">
+        Control Systems, Embedded Architectures & RF Communication for Space Applications
+      </h2>
 
-    <p>
-      Focused on Optical Systems, Space Communication, and Photonic Engineering.
-      Passionate about developing next-generation optical communication and sensing systems for space applications.
-    </p>
-
-    <div class="btn-box">
-      <a href="#contact" class="btn">Contact Me</a>
+      <h3 class="sub-headline">
+        Experience in system modeling, embedded system design, satellite communication links,
+        and optical & RF simulation for high-performance space and engineering systems.
+      </h3>
     </div>
 
-    <div class="social">
-      <a href="https://www.linkedin.com/in/utpal-raj-ambastha-536510250"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://github.com/charolette-xiome"><i class="bx bxl-github"></i></a>
+    <div class="homephoto">
+      <img src="website_photo.jpg" alt="Utpal Raj Ambastha" width="400" height="400" />
     </div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-  <h2>About Me</h2>
+    <div class="home-sci-collab">
+      <div class="home-sci">
+        <a href="https://www.linkedin.com/in/utpal-raj-ambastha-536510250">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/charolette-xiome">
+          <i class="bx bxl-github"></i>
+        </a>
+      </div>
+      <a href="#contact" class="btn collaborate-btn">Let’s Collaborate</a>
+    </div>
+  </section>
 
-  <p>
-    I am a third-year Engineering Physics undergraduate at IIT Patna (CGPA: 8.34),
-    specializing in optical and electro-optical systems, photonics, and space communication.
-  </p>
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
 
-  <p>
-    My work integrates experimental optics, computational modeling, and system-level simulation
-    of optical and RF communication systems. I aim to contribute to space missions,
-    particularly in optical communication and ground segment technologies aligned with ISRO.
-  </p>
-</section>
+    <div class="about-img">
+      <img src="website_photo.jpg" alt="Utpal Raj Ambastha" />
+    </div>
 
-<!-- SKILLS -->
-<section id="skills" class="skills">
-  <h2>Skills</h2>
+    <div class="about-content">
+      <h3>Undergraduate Researcher</h3>
 
-  <div class="skill-box">
-    <h3>Optics & Photonics</h3>
-    <p>Laser Systems, Optical Alignment, Fourier Optics, PSF Modelling, Optical Metrology</p>
-  </div>
+      <p>
+        I am a third-year B.Tech Engineering Physics undergraduate at IIT Patna (CGPA: 8.34).
+        My primary focus is on control systems, embedded systems, and communication technologies.
+      </p>
 
-  <div class="skill-box">
-    <h3>Space Communication</h3>
-    <p>Optical Communication, ATP Systems, Link Budget, Satellite Networks (LEO/MEO/GEO)</p>
-  </div>
+      <p>
+        I work on system-level modeling, control-oriented simulation, and implementation of embedded
+        and communication architectures. My interests extend to RF systems and photonic technologies
+        for space-based sensing and communication applications.
+      </p>
+    </div>
+  </section>
 
-  <div class="skill-box">
-    <h3>Simulation & Programming</h3>
-    <p>Python, MATLAB, Monte Carlo Simulation, Orbital Mechanics (SGP4, Skyfield)</p>
-  </div>
-</section>
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
 
-<!-- RESEARCH -->
-<section id="research" class="research">
-  <h2>Core Research</h2>
+    <div class="skills-content">
 
-  <div class="research-box">
-    <h3>Photonic Nanojet Assisted Optical Tweezers</h3>
-    <p><b>Supervisor:</b> IIT Patna</p>
-    <p>
-      Developing mid-IR nanojet-based trapping using CO₂ laser systems for near-field optical enhancement
-      and nanoparticle manipulation.
-    </p>
-  </div>
+      <div class="skill-box">
+        <h3>Control Systems</h3>
+        <p>System Modeling, Feedback Control, Stability Analysis, Dynamic Systems, Simulation</p>
+      </div>
 
-  <div class="research-box">
-    <h3>Beaconless Optical ATP Simulation</h3>
-    <p>
-      Designed simulation for acquisition, tracking, and pointing in optical satellite communication systems
-      using spiral and raster scanning.
-    </p>
+      <div class="skill-box">
+        <h3>Embedded Systems</h3>
+        <p>C/C++, Microcontrollers, Hardware-Software Integration, System Design</p>
+      </div>
 
-    <p>
-      🔗 <a href="https://www.researchgate.net/publication/399801670_Comprehensive_Simulation_and_Analysis_of_Beaconless_Acquisition_Tracking_and_Pointing_Using_Spiral_and_Raster_Scanning_for_Satellite_Optical_Communication" target="_blank">
-      View Research Publication
-      </a>
-    </p>
-  </div>
-</section>
+      <div class="skill-box">
+        <h3>RF & Communication Systems</h3>
+        <p>Satellite Links (LEO/MEO/GEO), Link Budget Analysis, Signal Processing, RF Systems</p>
+      </div>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-  <h2>Projects</h2>
+      <div class="skill-box">
+        <h3>Photonics & Optics</h3>
+        <p>Laser Systems, Optical Communication, Optical Tweezers, Photonic Nanojets</p>
+      </div>
 
-  <div class="project-box">
-    <h3>Mini ISTRAC Simulation Lab</h3>
-    <p>
-      Python-based ground station scheduling and satellite network simulation system with high reliability modeling.
-    </p>
+    </div>
+  </section>
 
-    <a href="https://github.com/charolette-xiome/Mini-ISTRAC-Simulation-Lab" target="_blank">
-      🔗 View Project
-    </a>
-  </div>
+  <!-- Core Research -->
+  <section class="coreresearch" id="coreresearch">
+    <h2 class="heading">Core <span>Research</span></h2>
 
-  <div class="project-box">
-    <h3>RFID Secured PRF Generator</h3>
-    <p>
-      Embedded system for secure gated pulse repetition frequency control using RFID authentication.
-    </p>
+    <div class="research-content">
 
-    <a href="https://github.com/charolette-xiome/Design-and-Implementation-of-an-RFID-Secured-Gated-Pulse-Repetition-Frequency-PRF-Generator" target="_blank">
-      🔗 View Project
-    </a>
-  </div>
+      <div class="research-box">
+        <h3>Mini ISTRAC Ground Station Simulation</h3>
+        <p>
+          Developed system-level simulation for satellite scheduling and ground station operations,
+          incorporating reliability modeling and communication constraints.
+        </p>
 
-  <div class="project-box">
-    <h3>Portfolio Website</h3>
-    <p>Personal academic and research portfolio built using HTML, CSS, and JavaScript.</p>
-  </div>
-</section>
+        <p>
+          🔗 <a href="https://github.com/charolette-xiome/Mini-ISTRAC-Simulation-Lab" target="_blank">
+          View Project
+          </a>
+        </p>
+      </div>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact</h2>
+      <div class="research-box">
+        <h3>Beaconless Optical ATP Simulation</h3>
+        <p>
+          Control-oriented simulation of acquisition, tracking, and pointing (ATP) for optical
+          satellite communication systems using spiral and raster scanning strategies.
+        </p>
 
-  <p><b>Email:</b> your.email@example.com</p>
+        <p>
+          🔗 <a href="https://www.researchgate.net/publication/399801670_Comprehensive_Simulation_and_Analysis_of_Beaconless_Acquisition_Tracking_and_Pointing_Using_Spiral_and_Raster_Scanning_for_Satellite_Optical_Communication" target="_blank">
+          View Publication
+          </a>
+        </p>
+      </div>
 
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+      <div class="research-box">
+        <h3>RFID Secured PRF Generator</h3>
+        <p>
+          Embedded system for secure gated pulse repetition frequency control using RFID-based authentication.
+        </p>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Utpal Raj Ambastha</p>
-</footer>
+        <p>
+          🔗 <a href="https://github.com/charolette-xiome/Design-and-Implementation-of-an-RFID-Secured-Gated-Pulse-Repetition-Frequency-PRF-Generator" target="_blank">
+          View Project
+          </a>
+        </p>
+      </div>
 
+      <div class="research-box">
+        <h3>Photonic Nanojet Optical Tweezers</h3>
+        <p>
+          Experimental work on nanojet-assisted trapping and near-field optical enhancement
+          using mid-IR laser systems.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tech Projects -->
+  <section class="techprojects" id="techprojects">
+    <h2 class="heading">Tech <span>Projects</span></h2>
+
+    <div class="project-content">
+
+      <div class="project-box">
+        <h3>Mini ISTRAC Simulation Lab</h3>
+        <p>Ground station scheduling and satellite simulation system.</p>
+      </div>
+
+      <div class="project-box">
+        <h3>RFID Secured PRF Generator</h3>
+        <p>Embedded system for secure RF pulse control.</p>
+      </div>
+
+      <div class="project-box">
+        <h3>Portfolio Website</h3>
+        <p>Personal academic and research portfolio.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Research Interests -->
+  <section class="research-interests" id="research-interests">
+    <h2 class="heading">Research <span>Interests</span></h2>
+
+    <ul>
+      <li>Control Systems & Dynamic Modeling</li>
+      <li>Embedded Systems & Real-Time Architectures</li>
+      <li>RF & Microwave Communication Systems</li>
+      <li>Satellite Communication & Ground Segment Systems</li>
+      <li>Photonics & Optical Communication</li>
+    </ul>
+  </section>
+
+  <!-- Extracurricular -->
+  <section class="extracurricular" id="extracurricular">
+    <h2 class="heading">Extra <span>Curricular</span></h2>
+
+    <div class="extra-content">
+      <div class="extra-box">
+        <h3>Chess</h3>
+        <p>Captain, IIT Patna Chess Team; 57th Inter-IIT Sports Meet 2024.</p>
+      </div>
+
+      <div class="extra-box">
+        <h3>Sketching</h3>
+        <p>Self-taught artist exploring creativity.</p>
+      </div>
+
+      <div class="extra-box">
+        <h3>Sports</h3>
+        <p>Volleyball and chess enthusiast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" required />
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email Address" required />
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Subject" required />
+        </div>
+      </div>
+
+      <div class="textarea-field">
+        <textarea cols="30" rows="6" placeholder="Your Message" required></textarea>
+      </div>
+
+      <div class="btn-box btns">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>© 2026 Utpal Raj Ambastha. All rights reserved.</p>
+    </div>
+    <div class="footer-icontop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </body>
+
 </html>
