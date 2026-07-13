@@ -416,6 +416,19 @@ section {
     background: var(--bg-color);
 }
 
+.research-interests ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.research-interests li {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
 /* Media Queries */
 @media (max-width: 991px) {
     html { font-size: 55%; }
